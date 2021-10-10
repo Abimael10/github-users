@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devfinder</title>
+
+    <script src="https://kit.fontawesome.com/01f9ebbfb8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+    <div class="content">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-bar__container">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="input">
+                        <input class="input__value" type="text" placeholder="Search Github Username...">
+                    </div>
+                    <div class="search-btn">
+                        <button class="btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-data hidden">
+        <div class="profile-data__container">
+            <div class="user-image">
+                <img src="#" class="user-image__avatar">
+            </div>
+            <div class="user-data">
+                <div class="user-data__info">
+                    <div class="user-data__info-name"></div>
+                    <div class="user-data__info-date"></div>
+                </div>
+                <div class="user-data__username"></div>
+                <div class="user-data__bio"></div>
+                <div class="user-data__stats">
+                    <div class="user-data__stats-repos">
+                        <label>Repos</label>
+                        <div class="data"></div>
+                    </div>
+                    <div class="user-data__stats-followers">
+                        <label>Followers</label>
+                        <div class="data"></div>
+                    </div>
+                    <div class="user-data__stats-following">
+                        <label>Following</label>
+                        <div class="data"></div>
+                    </div>
+                </div>
+                <div class="user-data__other-info">
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="data"></div>
+                    </div>
+                    <div class="twitter">
+                        <i class="fab fa-twitter"></i>
+                        <div class="data"></div>
+                    </div>
+                    <div class="website">
+                        <i class="fas fa-link"></i>
+                        <div class="data"></div>
+                    </div>
+                    <div class="company">
+                        <i class="fas fa-building"></i>
+                        <div class="data"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="not-found hidden">
+        No such user! Try to see if you made a typo or check if this account is not available :)
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
