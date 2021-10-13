@@ -1,3 +1,5 @@
+@import 'mixins';
+
 * {
     padding: 0;
     margin: 0;
@@ -20,6 +22,14 @@ body {
         width: 80%;
         margin: auto;
 
+        @include breakpoint(phone) {
+            width: 90%;
+        }
+
+        @include breakpoint(tablet) {
+            width: 90%;
+        }
+
         & .search-bar {
             //width: 100%;
             margin-top: 3rem;
@@ -35,6 +45,10 @@ body {
                 & .search-icon{
                     font-size: 1.5rem;
                     color: #6969d6;
+
+                    @include breakpoint(phone) {
+                        font-size: 1.1rem;
+                    }
                 }
 
                 & .input {
@@ -48,6 +62,15 @@ body {
                         font-family:monospace;
                         font-size: 1.5rem;
                         color: #fff;
+
+                        @include breakpoint(phone) {
+                            font-size: .8rem;
+                            margin-left: .5rem;
+                        }
+
+                        @include breakpoint(tablet) {
+                            margin-left: 1rem;
+                        }
 
                         &::placeholder {
                             font-family: inherit;
@@ -70,6 +93,11 @@ body {
                         cursor: pointer;
                         transition: ease .3s;
 
+                        @include breakpoint(phone) {
+                            padding: .7rem .7rem;
+                            font-size: 1rem;
+                        }
+
                         &:hover {
                             background-color: #8357a8;
                         }
@@ -87,19 +115,50 @@ body {
     border-radius: .5rem;
     background-color: #222;
 
+    @include breakpoint(phone) {
+        width: 90%;
+    }
+
+    @include breakpoint(tablet) {
+        width: 90%;
+    }
+
     &__container {
         display: flex;
         padding: 3rem;
 
+        @include breakpoint(phone) {
+            flex-direction: column;
+            padding: 1.3rem;
+        }
+
+        @include breakpoint(tablet) {
+            padding: 1.5rem;
+        }
+
         & .user-image {
             
             margin-right: 2rem;
+
+            @include breakpoint(phone) {
+                margin: 0 auto;
+            }
 
             &__avatar {
                 width: 13rem;
                 height: 13rem;
                 border-radius: 50%;
                 overflow: hidden;
+
+                @include breakpoint(phone) {
+                    width: 7rem;
+                    height: 7rem;
+                }
+
+                @include breakpoint(tablet) {
+                    width: 9rem;
+                    height: 9rem;
+                }
             }
         }
 
@@ -112,6 +171,13 @@ body {
                 display: flex;
                 justify-content: space-between;
 
+                @include breakpoint(phone) {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1rem;
+                }
+
                 &-name {
                     font-size: 1.5rem;
                     font-weight: 600;
@@ -119,6 +185,14 @@ body {
 
                 &-date {
                     font-size: 1.3rem;
+
+                    @include breakpoint(phone) {
+                        font-size: 1rem;
+                    }
+
+                    @include breakpoint(tablet) {
+                        font-size: 1.2rem;
+                    }
                 }
             }
 
@@ -126,6 +200,10 @@ body {
                 margin-top: 1.5rem;
                 color: #6969d6;
                 font-size: 1.1rem;
+
+                @include breakpoint(phone) {
+                    text-align: center;
+                }
             }
 
             &__bio {
@@ -141,6 +219,10 @@ body {
                 padding: 2rem;
                 margin: 1rem 0;
                 border-radius: .8rem;
+
+                @include breakpoint(phone) {
+                    text-align: center;
+                }
 
                 &__repos {
                     display: flex;
@@ -171,6 +253,10 @@ body {
                 grid-template-columns: 1fr 1fr;
                 gap: 1rem;
                 margin-top: 2rem;
+
+                @include breakpoint(phone) {
+                    grid-template-columns: 1fr;
+                }
 
                 & .location {
                     display: flex;
@@ -206,4 +292,8 @@ body {
     background-color: #a11919;
     font-size: 1.5rem;
     font-weight: 600;
+
+    @include breakpoint(phone) {
+        width: 90%;
+    }
 }

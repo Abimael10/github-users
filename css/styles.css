@@ -20,6 +20,18 @@ body {
   margin: auto;
 }
 
+@media (max-width: 37.5em) {
+  .content .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 50em) {
+  .content .container {
+    width: 90%;
+  }
+}
+
 .content .container .search-bar {
   margin-top: 3rem;
   border-radius: .5rem;
@@ -44,6 +56,12 @@ body {
   color: #6969d6;
 }
 
+@media (max-width: 37.5em) {
+  .content .container .search-bar__container .search-icon {
+    font-size: 1.1rem;
+  }
+}
+
 .content .container .search-bar__container .input {
   width: 80%;
 }
@@ -56,6 +74,19 @@ body {
   font-family: monospace;
   font-size: 1.5rem;
   color: #fff;
+}
+
+@media (max-width: 37.5em) {
+  .content .container .search-bar__container .input input {
+    font-size: .8rem;
+    margin-left: .5rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .content .container .search-bar__container .input input {
+    margin-left: 1rem;
+  }
 }
 
 .content .container .search-bar__container .input input::-webkit-input-placeholder {
@@ -95,6 +126,13 @@ body {
   transition: ease .3s;
 }
 
+@media (max-width: 37.5em) {
+  .content .container .search-bar__container .search-btn .btn {
+    padding: .7rem .7rem;
+    font-size: 1rem;
+  }
+}
+
 .content .container .search-bar__container .search-btn .btn:hover {
   background-color: #8357a8;
 }
@@ -107,6 +145,18 @@ body {
   background-color: #222;
 }
 
+@media (max-width: 37.5em) {
+  .profile-data {
+    width: 90%;
+  }
+}
+
+@media (max-width: 50em) {
+  .profile-data {
+    width: 90%;
+  }
+}
+
 .profile-data__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,8 +164,30 @@ body {
   padding: 3rem;
 }
 
+@media (max-width: 37.5em) {
+  .profile-data__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.3rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .profile-data__container {
+    padding: 1.5rem;
+  }
+}
+
 .profile-data__container .user-image {
   margin-right: 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .profile-data__container .user-image {
+    margin: 0 auto;
+  }
 }
 
 .profile-data__container .user-image__avatar {
@@ -123,6 +195,20 @@ body {
   height: 13rem;
   border-radius: 50%;
   overflow: hidden;
+}
+
+@media (max-width: 37.5em) {
+  .profile-data__container .user-image__avatar {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .profile-data__container .user-image__avatar {
+    width: 9rem;
+    height: 9rem;
+  }
 }
 
 .profile-data__container .user-data {
@@ -145,6 +231,22 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 37.5em) {
+  .profile-data__container .user-data__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+  }
+}
+
 .profile-data__container .user-data__info-name {
   font-size: 1.5rem;
   font-weight: 600;
@@ -154,10 +256,28 @@ body {
   font-size: 1.3rem;
 }
 
+@media (max-width: 37.5em) {
+  .profile-data__container .user-data__info-date {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .profile-data__container .user-data__info-date {
+    font-size: 1.2rem;
+  }
+}
+
 .profile-data__container .user-data__username {
   margin-top: 1.5rem;
   color: #6969d6;
   font-size: 1.1rem;
+}
+
+@media (max-width: 37.5em) {
+  .profile-data__container .user-data__username {
+    text-align: center;
+  }
 }
 
 .profile-data__container .user-data__bio {
@@ -177,6 +297,12 @@ body {
   padding: 2rem;
   margin: 1rem 0;
   border-radius: .8rem;
+}
+
+@media (max-width: 37.5em) {
+  .profile-data__container .user-data__stats {
+    text-align: center;
+  }
 }
 
 .profile-data__container .user-data__stats__repos {
@@ -232,6 +358,13 @@ body {
   margin-top: 2rem;
 }
 
+@media (max-width: 37.5em) {
+  .profile-data__container .user-data__other-info {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .profile-data__container .user-data__other-info .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,5 +403,11 @@ body {
   background-color: #a11919;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 37.5em) {
+  .not-found {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
